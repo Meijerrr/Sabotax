@@ -9,6 +9,11 @@ local Window = Library.CreateLib("Sabotax - v1.0", "Sentinel")
         loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
     end)
 
+        MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+
+
 
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
@@ -27,12 +32,6 @@ local Window = Library.CreateLib("Sabotax - v1.0", "Sentinel")
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     end)
 
-    PlayerSection:NewButton("Bypassed Fly", "bird mode", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
-
-        Fly(true)
-    end)
-
 
     --Other
     local Other = Window:NewTab("Other")
@@ -40,4 +39,10 @@ local Window = Library.CreateLib("Sabotax - v1.0", "Sentinel")
 
     OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
         loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+    end)
+
+    OtherSection:NewButton("Bypassed Fly", "bird mode", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
+
+        Fly(true)
     end)
